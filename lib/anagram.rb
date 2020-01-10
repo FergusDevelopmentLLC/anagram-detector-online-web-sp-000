@@ -7,6 +7,8 @@ class Anagram
   end
 
   def match(words)
+    wordArray = word.split("")
+    p wordArray
     words.each {|word|
         p word
     }
