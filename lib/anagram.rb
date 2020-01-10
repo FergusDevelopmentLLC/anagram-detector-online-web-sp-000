@@ -7,7 +7,7 @@ class Anagram
   end
 
   def match(words)
-    wordArray = word.split("")
+    wordArray = word.split("").sort
     p wordArray
     words.each {|word|
         p word
