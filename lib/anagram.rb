@@ -7,10 +7,10 @@ class Anagram
   end
 
   def match(words)
-    wordArray = word.split("").sort
-    p wordArray
+    initLetters = initWord.split("").sort
+    p initLetters
     words.each {|word|
-        p word
+        p word.split("").sort
     }
   end
 
