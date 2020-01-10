@@ -7,11 +7,12 @@ class Anagram
   end
 
   def match(words)
-    initLetters = initWord.split("").sort
-    p initLetters
-    words.each {|word|
-        p word.split("").sort
+    # initLetters = initWord.split("").sort
+    # p initLetters
+    match = words.select {|word|
+        word.split("").sort == initWord.split("").sort
     }
+    match
   end
 
 end
