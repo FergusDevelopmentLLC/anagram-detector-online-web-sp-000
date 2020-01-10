@@ -7,6 +7,9 @@ class Anagram
   end
 
   def match(words)
+    words.each {|word|
+        p word
+    }
   end
 
 end
